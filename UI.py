@@ -96,7 +96,7 @@ def main_menu():
     #       TRACKING SYSTEM          #
     #================================#
     
-    * Please choose from the one of the
+    * Please choose from one of the
     options below.
     """)
     main_switch()
