@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+c	UI.py	/^c = conn.cursor()$/;"	v
+c	app.py	/^c = conn.cursor()$/;"	v
+clear_database	database.py	/^def clear_database(cursor, connection):$/;"	f
+conn	UI.py	/^conn = sqlite3.connect('appDB.db')$/;"	v
+conn	app.py	/^conn = sqlite3.connect('appDB.db')$/;"	v
+create_new_request	UI.py	/^def create_new_request():$/;"	f
+create_request	database.py	/^def create_request(cursor, connection, employee_last_name, employee_first_name, employee_departm/;"	f
+display_closed_requests	UI.py	/^def display_closed_requests(cursor):$/;"	f
+display_open_requests	UI.py	/^def display_open_requests(cursor):$/;"	f
+exit_program	UI.py	/^def exit_program():$/;"	f
+fetch_closed_requests	database.py	/^def fetch_closed_requests(cursor):$/;"	f
+fetch_open_requests	database.py	/^def fetch_open_requests(cursor):$/;"	f
+format_query_results	UI.py	/^def format_query_results(results):$/;"	f
+format_query_results	database.py	/^def format_query_results(results):$/;"	f
+main_menu	UI.py	/^def main_menu():$/;"	f
+main_switch	UI.py	/^def main_switch():$/;"	f
+populate_database	database.py	/^def populate_database(cursor, connection):$/;"	f
+query_switch	UI.py	/^def query_switch():$/;"	f
+request_menu	UI.py	/^def request_menu():$/;"	f
+request_switch	UI.py	/^def request_switch():$/;"	f
+techs	database.py	/^techs = ['Dickie Hammond', 'Chris Hannah', 'Jeff Ott', 'Frankie Stubbs']$/;"	v

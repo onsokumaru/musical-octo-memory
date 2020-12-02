@@ -12,4 +12,3 @@ populate_database(c, conn)
 # program start
 main_menu()
 
-clear_database(c, conn)

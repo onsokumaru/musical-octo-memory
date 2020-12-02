@@ -31,7 +31,6 @@ def main_switch():
             exit_program()
         else:
             print("Invalid option entered.... exiting.")
-            exit(1)
 
 
 # --- Request Menu switch case --- #
@@ -46,7 +45,6 @@ def request_switch():
         option = int(input("Please enter your option : "))
     except ValueError:
         print("Invalid input provided... exiting")
-        exit(1)
     else:
         # based on option chosen take the appropriate action
         keep_going = True
@@ -60,7 +58,6 @@ def request_switch():
             exit_program()
         else:
             print("Invalid option entered.... exiting.")
-            exit(1)
 
 
 # --- Query Menu switch case --- #
@@ -89,7 +86,6 @@ def query_switch():
             exit_program()
         else:
             print("Invalid option entered.... exiting.")
-            exit(1)
 
 # --- MENU FUNCTIONS --- #
 # --- Main Menu --- #
@@ -125,7 +121,6 @@ def create_new_request():
         request_desc = input("Please enter a brief description of your service request : ")
     except ValueError:
         print("Invalid input provided... exiting")
-        exit(1)
     else:
         print(" ")
         print("Creating requests... ")
@@ -138,7 +133,6 @@ def create_new_request():
             new_request = input("Would you like to create another request[Y/N]?: ")
         except ValueError:
             print("Invalid input provided... exiting")
-            exit(1)
         else:
             # based on option chosen take the appropriate action
             if new_request.upper() == 'Y':
@@ -147,7 +141,6 @@ def create_new_request():
                 main_menu()
             else:
                 print("Invalid option entered.... exiting.")
-                exit(1)
 
 
 # the functions to query the database and display the output are provided by the database.py module
@@ -159,7 +152,6 @@ def display_open_requests(cursor):
         display_something_else = input("Would you like to display something else[Y/N]?: ")
     except ValueError:
         print("Invalid input provided... exiting")
-        exit(1)
     else:
         # based on option chosen take the appropriate action
         if display_something_else.upper() == 'Y':
@@ -168,7 +160,6 @@ def display_open_requests(cursor):
             main_menu()
         else:
             print("Invalid option entered.... exiting.")
-            exit(1)
 
 
 def display_closed_requests(cursor):
@@ -179,7 +170,6 @@ def display_closed_requests(cursor):
         display_something_else = input("Would you like to display something else[Y/N]?: ")
     except ValueError:
         print("Invalid input provided... exiting")
-        exit(1)
     else:
         # based on option chosen take the appropriate action
         if display_something_else.upper() == 'Y':
@@ -188,7 +178,6 @@ def display_closed_requests(cursor):
             main_menu()
         else:
             print("Invalid option entered.... exiting.")
-            exit(1)
 
 
 def format_query_results(results):
@@ -205,4 +194,3 @@ def exit_program():
     print("Program Exiting ... ")
     print()
     print("Goodbye ^_^ ")
-    exit(0)
